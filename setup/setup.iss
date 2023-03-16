@@ -21,12 +21,12 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={autopf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 DisableProgramGroupPage=yes
-LicenseFile=E:\code\rust\hello_world\License
+LicenseFile=E:\code\rust\Jfpng\License
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
 OutputDir=E:\out\exe
 OutputBaseFilename=Jfpng_setup
-SetupIconFile=E:\code\rust\hello_world\res\png.ico
+SetupIconFile=E:\code\rust\Jfpng\res\png.ico
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
@@ -35,7 +35,7 @@ WizardStyle=modern
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
-Source: "E:\code\rust\hello_world\target\release\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "E:\code\rust\Jfpng\target\release\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
@@ -43,5 +43,5 @@ Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
 Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName}}"; Filename: "{#MyAppURL}"
 Name: "{group}\{cm:UninstallProgram,{#MyAppName}}"; Filename: "{uninstallexe}"
 [Registry]
-Root: HKCR; Subkey: "SystemFileAssociations\.jfif\Shell\Convert to png\command"; ValueType: string; ValueName: ""; ValueData: """{app}\Jfpng.exe"" ""%1"""
-
+Root: HKCR; Subkey: "SystemFileAssociations\.jfif\Shell\Convert to png";  Flags: uninsdeletekey
+Root: HKCR; Subkey: "SystemFileAssociations\.jfif\Shell\Convert to png\command"; ValueType: string; ValueName: ""; ValueData: """{app}\Jfpng.exe"" ""%1"""; Flags: uninsdeletekey

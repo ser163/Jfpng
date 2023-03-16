@@ -25,7 +25,7 @@ LicenseFile=E:\code\rust\Jfpng\License
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
 OutputDir=E:\out\exe
-OutputBaseFilename=Jfpng_setup
+OutputBaseFilename=Jfpng_setup_x86_64
 SetupIconFile=E:\code\rust\Jfpng\res\png.ico
 Compression=lzma
 SolidCompression=yes
